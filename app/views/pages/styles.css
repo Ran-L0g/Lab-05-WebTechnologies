@@ -1,0 +1,98 @@
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.bubble-container h1, .bubble-container h2, .bubble-container h3 {
+    color: #6113aa;
+}
+
+.bubble-container {
+    background-color: rgba(180, 167, 189, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+body {
+    background-image: url('../Drawings/BG12.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.custom-border {
+    border-top: 4px solid #6113aa;
+    margin: 10px 0;
+}
+
+.bubble-container h1, .bubble-container h2, .bubble-container p {
+    margin-top: 10px;
+}
+
+.contact-section h4, .contact-section p {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.relevant-info-card {
+    background-color: rgba(180, 167, 189, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.relevant-info-card .card-body {
+    color: #333;
+}
+
+.relevant-info-card .card-title {
+    color: #6113aa;
+}
+
+.btn-custom {
+    background-color: #6113aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-custom:hover {
+    background-color: #4b0e8e;
+}
+
+.text-custom {
+    color: #6113aa;
+}
+
+.social-links {
+    margin-left: 100px;
+    display: flex;
+    gap: 15px;
+}
+
+
+.accordion-button {
+    background-color: rgba(206, 186, 219, 0.838);
+    color: #333;
+}
+
+.accordion-body {
+    background-color: rgba(180, 167, 189, 0.8);
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6113aa;
+    color: white;
+}

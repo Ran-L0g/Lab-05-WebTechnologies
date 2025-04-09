@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "bootstrap", "~> 5.3"
+
+gem "bundler-audit", "~> 0.9.2", group: :development

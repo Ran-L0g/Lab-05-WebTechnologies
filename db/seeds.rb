@@ -7,11 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-
 Message.delete_all
 Chat.delete_all
 User.delete_all
-
 # USRERS
 User.create!(email: "pepito@example.com", first_name: "Pepito", last_name: "Pantalon")
 User.create!(email: "teto@example.com", first_name: "Teto", last_name: "Kasane")
@@ -23,7 +21,6 @@ User.create!(email: "rinoceronts@example.com", first_name: "Rino", last_name: "P
 User.create!(email: "helen@example.com", first_name: "Helen", last_name: "Ortiz")
 User.create!(email: "notarusianname@example.com", first_name: "Iván", last_name: "Ivanovich")
 User.create!(email: "juacinta@example.com", first_name: "Juana", last_name: "Jacinta")
-
 # CHAT
 Chat.create!(sender_id: 1, receiver_id: 2)
 Chat.create!(sender_id: 3, receiver_id: 4)
@@ -35,7 +32,6 @@ Chat.create!(sender_id: 4, receiver_id: 1)
 Chat.create!(sender_id: 6, receiver_id: 3)
 Chat.create!(sender_id: 8, receiver_id: 7)
 Chat.create!(sender_id: 10, receiver_id: 9)
-
 # MSG
 Message.create!(chat_id: 1, user_id: 1, body: "HELLO TETO")
 Message.create!(chat_id: 2, user_id: 3, body: "Hey Kratos, KYS!!!!")
@@ -47,7 +43,3 @@ Message.create!(chat_id: 7, user_id: 4, body: "GM, HRU!")
 Message.create!(chat_id: 8, user_id: 6, body: "WAKE UP!!!!")
 Message.create!(chat_id: 9, user_id: 8, body: "FOOTBALLLLLLLLLLLLLLLLLLL!!!!!!!!")
 Message.create!(chat_id: 10, user_id: 10, body: "Bye, see you l8ter.")
-
-
-
-

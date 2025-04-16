@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
+  resources :users, only: [:index, :show]
+  resources :chats, only: [:index, :show]
+  resources :messages, only: [:index, :show]
+  get "messages/index"
+  get "messages/show"
+  get "chats/index"
+  get "chats/show"
+  get "users/index"
+  get "users/show"
   root "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   get "old_page", to: "pages#old_page"
+  
 
 
 

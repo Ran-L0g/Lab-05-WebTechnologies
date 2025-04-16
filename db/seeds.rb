@@ -10,6 +10,11 @@
 Message.delete_all
 Chat.delete_all
 User.delete_all
+
+ActiveRecord::Base.connection.reset_pk_sequence!('users')
+ActiveRecord::Base.connection.reset_pk_sequence!('chats')
+ActiveRecord::Base.connection.reset_pk_sequence!('messages')
+
 # USRERS
 User.create!(email: "pepito@example.com", first_name: "Pepito", last_name: "Pantalon")
 User.create!(email: "teto@example.com", first_name: "Teto", last_name: "Kasane")

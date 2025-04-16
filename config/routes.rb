@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index, :show]
-  resources :chats, only: [:index, :show]
-  resources :messages, only: [:index, :show]
+  resources :users, only: [ :index, :show ]
+  resources :chats, only: [ :index, :show ]
+  resources :messages, only: [ :index, :show ]
   get "messages/index"
   get "messages/show"
   get "chats/index"
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   get "old_page", to: "pages#old_page"
-  
+
 
 
 

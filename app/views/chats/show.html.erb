@@ -4,4 +4,16 @@
 <p><strong>Receiver_id:</strong> <%= @chat.receiver_id %></p>
 <p><strong>Created At:</strong> <%= @chat.created_at %></p>
 
+<p>Sender: <%= @chat.sender.first_name %> <%= @chat.sender.last_name %></p>
+<p>Receiver: <%= @chat.receiver.first_name %> <%= @chat.receiver.last_name %></p>
+
+
+<h3>Messages:</h3>
+<ul>
+  <% @chat.messages.each do |msg| %>
+    <li><%= msg.body %> (by <%= msg.user.first_name %>)</li>
+  <% end %>
+</ul>
+
+
 <%= link_to 'Back to Chats', chats_path %>

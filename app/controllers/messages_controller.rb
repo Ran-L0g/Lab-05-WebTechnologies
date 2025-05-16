@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    @message = Message.all
+    @message = Message.all.order(:chat_id)
   end
 
   def show
@@ -17,6 +17,21 @@ class MessagesController < ApplicationController
       redirect_to messages_path
     else
       render :new
+    end
+  end
+
+  def edit
+    @message = Message.find(params[:id])
+  end
+
+  def update
+    @message = Message.find(params[:id])
+    if @message.update(message_params)
+      redirect_to @message, notice: "Mensaje actualizado correctamente."
+    else
+      @chats = Chat.all
+      @users = User.all
+      render :edit
     end
   end
 

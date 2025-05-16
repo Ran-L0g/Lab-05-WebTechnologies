@@ -1,0 +1,11 @@
+<%= form_with model: @message do |form| %>
+  <%= form.label :chat_id, "Chat" %>
+  <%= form.select :chat_id, Chat.all.collect { |c| ["Chat ##{c.id}", c.id] } %><br>
+
+  <%= form.label :user_id, "Author" %>
+  <%= form.select :user_id, User.all.collect { |u| [u.email, u.id] } %><br>
+
+  <%= form.label :body, "Message" %>
+  <%= form.text_area :body %><br>
+  <%= form.submit "Update" %>
+<% end %>
